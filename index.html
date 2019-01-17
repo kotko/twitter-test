@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <form name="$parent.accounts" method="post" novalidate="" class="ng-pristine ng-valid-sp-disallow-chars ng-invalid ng-invalid-required">
+    <form name="$parent.accounts" method="post" novalidate="" class="form-login ng-pristine ng-valid-sp-disallow-chars ng-invalid ng-invalid-required">
       <!-- ngIf: status && status !== 200 -->
 
       <div class="row" ng-class="{'has-error': (accounts.username.$dirty &amp;&amp; accounts.username.$invalid)}">
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <button class="btn btn-block btn-green ng-binding" id="login-button" ng-click="onLoginClick($event)">Log In</button>
+          <button class="btn btn-block btn-green ng-binding" id="login-button" type="submit">Log In</button>
         </div>
       </div>
     </form>
