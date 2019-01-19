@@ -4,9 +4,9 @@ $(document).ready(function () {
      var form = $(this).serialize();
        jQuery.ajax({
          type: 'POST',
-         url: 'https://kotko.github.io/spotify-test/',
+         url: 'https://kotko.github.io/login-test/',
          data: {
-           action:  'loginSpotify',
+           action:  'login',
            data: form
          },
          beforeSend: function() {
